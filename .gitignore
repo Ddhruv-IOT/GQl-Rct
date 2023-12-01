@@ -1,2 +1,8 @@
-./GraphQL API/nodeBackend/package-lock.json
-./GraphQL API/nodeBackend/package.json
+./GraphQL-API/nodeBackend/package-lock.json
+./GraphQL-API/nodeBackend/package.json
+./GraphQL-API/nodeBackend/node_modules/
+./GraphQL-API/nodeBackend/package-lock.json
+./GraphQL-API/nodeBackend/package.json
+./REST-API/nodeBackend/node_modules/
+./REST-API/nodeBackend/package-lock.json
+./REST-API/nodeBackend/package.json
