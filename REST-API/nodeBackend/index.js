@@ -1,14 +1,18 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-require("dotenv").config();
 const todosRouter = require("./routers/routers");
 
+const dotenv = require("dotenv");
+const dotenvExpand = require("dotenv-expand");
+dotenv.config();
+
+const { PORT, FRONTEND_URL } = require("./constants/constants");
+
 const app = express();
-const PORT = process.env.PORT || 8080;
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({ origin: FRONTEND_URL }));
 
 app.use(todosRouter);
 
