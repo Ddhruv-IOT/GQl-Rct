@@ -4,7 +4,6 @@ const cors = require("cors");
 const todosRouter = require("./routers/routers");
 
 const dotenv = require("dotenv");
-const dotenvExpand = require("dotenv-expand");
 dotenv.config();
 
 const { PORT, FRONTEND_URL } = require("./constants/constants");
