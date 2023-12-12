@@ -1,7 +1,6 @@
-import { useState } from "react";
 import Todo1 from "./components/restApi/restapi";
-import "./App.css";
 import Todo2 from "./components/graphql/gql";
+import "./App.css";
 
 function App() {
   return (
