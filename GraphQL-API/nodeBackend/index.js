@@ -1,47 +1,14 @@
 import cors from "cors";
 import express from "express";
-import {ApolloServer,gql} from 'apollo-server'
-import {ApolloServerPluginLandingPageGraphQLPlayground} from 'apollo-server-core'
+import { ApolloServer } from "apollo-server";
+import { ApolloServerPluginLandingPageGraphQLPlayground } from "apollo-server-core";
+import { PORT, FRONTEND_URL } from "./constants/constants.js";
+import { typeDefs } from "./schema/schema.js";
 
+let todo1 = [];
 
 const app = express();
-app.use(cors());
-
-let todo1 = [
-  { item: "it1", id: "1" },
-  { item: "it2", id: "2" },
-  { item: "it3", id: "3" },
-];
-
-const typeDefs = `#graphql
-  
-  # Basic strcutre for the list
-  type Todo {
-    id: ID!
-    item: String!
-  }
-
-  # Fetch the whole list
-  type Query {
-    todos: [Todo]
-  }
-
-  # Make chnages to the List
-  type Mutation {
-    addTodo(item: AddInputItem): Todo
-    updateTodo(id: ID!, edits: EditTodoItem!): Todo
-    deleteTodo(id: ID!): [Todo]
-  }
-
-  input AddInputItem {
-    item: String!,
-  }
-
-  input EditTodoItem {
-    item: String!,
-  }
-
-`;
+app.use(cors({ origin: FRONTEND_URL }));
 
 const resolvers = {
   Query: {
@@ -76,14 +43,13 @@ const resolvers = {
   },
 };
 
-const server = new ApolloServer({ 
-    typeDefs, 
-    resolvers,
-    plugins:[
-        ApolloServerPluginLandingPageGraphQLPlayground()
-    ]
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  cors: { origin: FRONTEND_URL },
+  plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
 });
 
-server.listen().then(({ url }) => {
+server.listen(PORT).then(({ url }) => {
   console.log(`🚀  Server ready at ${url}`);
 });
