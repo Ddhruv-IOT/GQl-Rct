@@ -1,5 +1,5 @@
-import Todo1 from "./components/restApi/restapi";
-import Todo2 from "./components/graphql/gql";
+import Todo1 from "./components/restApi/rUI";
+import Todo2 from "./components/graphql/gqlUI";
 import "./App.css";
 
 function App() {
