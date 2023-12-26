@@ -8,7 +8,7 @@ import { typeDefs } from "./schema/schema.js";
 let todo1 = [];
 
 const app = express();
-app.use(cors({ origin: FRONTEND_URL }));
+app.use(cors());
 
 const resolvers = {
   Query: {
@@ -46,7 +46,7 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  cors: { origin: FRONTEND_URL },
+  // cors: { origin: FRONTEND_URL },
   plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
 });
 
