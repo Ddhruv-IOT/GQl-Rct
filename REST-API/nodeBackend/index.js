@@ -8,7 +8,7 @@ const { PORT, FRONTEND_URL } = require("./constants/constants");
 const app = express();
 
 app.use(bodyParser.json());
-app.use(cors({ origin: FRONTEND_URL }));
+app.use(cors(/*{ origin: FRONTEND_URL }*/));
 
 app.use(todosRouter);
 
