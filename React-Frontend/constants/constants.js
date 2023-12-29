@@ -1,19 +1,19 @@
 const config = {
   PORT: import.meta.env.VITE_PORT || 3001,
   GQL_BACKEND_URL:
-    import.meta.env.VITE_GQL_BACKEND_URL || "http://localhost:4000",
+    import.meta.env.VITE_GQL_BACKEND_URL || "https://gql-api-mcxt.onrender.com/",
   REST_BACKEND_GET_URL:
     import.meta.env.VITE_REST_BACKEND_GET_URL ||
-    "http://localhost:3001/api/todos",
+    "https://rest-api-dihw.onrender.com/api/todos",
   REST_BACKEND_PUT_URL:
     import.meta.env.VITE_REST_BACKEND_PUT_URL ||
-    "http://localhost:3001/api/todos",
+    "https://rest-api-dihw.onrender.com/api/todos",
   REST_BACKEND_POST_URL:
     import.meta.env.VITE_REST_BACKEND_POST_URL ||
-    "http://localhost:3001/api/todos",
+    "https://rest-api-dihw.onrender.com/api/todos",
   REST_BACKEND_DELETE_URL:
     import.meta.env.VITE_REST_BACKEND_DELETE_URL ||
-    "http://localhost:3001/api/todos",
+    "https://rest-api-dihw.onrender.com/api/todos",
 };
 
 export default config;

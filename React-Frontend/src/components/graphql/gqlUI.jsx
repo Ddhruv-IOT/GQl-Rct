@@ -1,3 +1,4 @@
+import {react} from 'react';
 import { IoMdSend } from "react-icons/io";
 import { Todo2Logic } from "./gqlogic";
 import "../style/style.scss";

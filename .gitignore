@@ -10,3 +10,6 @@ React-Frontend/public/
 React-Frontend/src/assets/
 React-Frontend/vite.config.js       
 
+
+# Local Netlify folder
+.netlify

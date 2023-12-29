@@ -3,6 +3,8 @@ import config from "../constants/constants.js";
 import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 import App from "./App.jsx";
 import "./index.css";
+import {react} from 'react';
+
 
 const client = new ApolloClient({
   // connect to GraphQL backend
