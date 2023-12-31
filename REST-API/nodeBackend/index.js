@@ -45,9 +45,9 @@ const app = express();
 
 // Enable other CORS-related headers and methods
 
-app.use(cors({
-  origin: "https://todo-app-04bu.onrender.com"
-}));
+// app.use(cors({
+//   origin: "https://todo-app-04bu.onrender.com"
+// }));
 
 // app.options('*', cors())
 
