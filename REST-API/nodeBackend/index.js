@@ -49,7 +49,7 @@ app.use(cors({
   origin: "https://todo-app-04bu.onrender.com"
 }));
 
-app.options('*', cors())
+// app.options('*', cors())
 
 // app.options('*', cors());
 

@@ -1,4 +1,3 @@
-import {react} from 'react';
 import Todo1 from "./components/restApi/rUI";
 import Todo2 from "./components/graphql/gqlUI";
 import "./App.css";

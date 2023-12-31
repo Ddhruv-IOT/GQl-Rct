@@ -1,4 +1,4 @@
-import { useState, useEffect, react } from "react";
+import { useState, useEffect } from "react";
 import Swal from "sweetalert2";
 import config from "../../../constants/constants";
 
