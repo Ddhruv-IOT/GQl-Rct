@@ -44,11 +44,22 @@ const { PORT, FRONTEND_URL } = require("./constants/constants");
 const app = express();
 
 // Enable other CORS-related headers and methods
-app.use(cors({
-  origin: "https://todo-app-04bu.onrender.com"
-}));
+// app.use(cors({
+//   origin: "https://todo-app-04bu.onrender.com"
+// }));
+
+// app.options('*', cors());
+
+// app.use((req, res, next) => {
+//   res.setHeader('Referrer-Policy', 'same-origin');
+//   next();
+// });
 
 app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', 'https://todo-app-04bu.onrender.com');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+  res.setHeader('Access-Control-Allow-Credentials', 'true');
   res.setHeader('Referrer-Policy', 'same-origin');
   next();
 });
