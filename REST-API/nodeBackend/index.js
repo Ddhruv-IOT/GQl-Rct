@@ -7,12 +7,12 @@ const { PORT, FRONTEND_URL } = require("./constants/constants");
 
 const app = express();
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", FRONTEND_URL);
-  // You can also use '*' if you want to allow any origin
-  // res.header("Access-Control-Allow-Origin", "*");
-  next();
-});
+// app.use((req, res, next) => {
+//   res.header("Access-Control-Allow-Origin", FRONTEND_URL);
+//   // You can also use '*' if you want to allow any origin
+//   // res.header("Access-Control-Allow-Origin", "*");
+//   next();
+// });
 
 // Enable other CORS-related headers and methods
 app.use(cors());
