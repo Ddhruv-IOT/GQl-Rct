@@ -46,7 +46,6 @@ const resolvers = {
 const server = new ApolloServer({
   typeDefs,
   resolvers,
-  // cors: { origin: FRONTEND_URL },
   plugins: [ApolloServerPluginLandingPageGraphQLPlayground()],
 });
 
