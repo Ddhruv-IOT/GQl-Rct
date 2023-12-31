@@ -58,7 +58,7 @@ app.use((req, res, next) => {
   next();
 });
 app.use((req, res, next) => {
-const allowedOrigins = ['https://todo-app-04bu.onrender.com', 'https://rest-gql-todo-app.netlify.app/'];
+const allowedOrigins = ['https://todo-app-04bu.onrender.com', 'https://rest-gql-todo-app.netlify.app'];
 
   const origin = req.headers.origin;
 
