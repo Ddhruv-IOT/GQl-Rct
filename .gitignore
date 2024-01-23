@@ -1,14 +1,11 @@
 GraphQL-API/nodeBackend/node_modules/
 GraphQL-API/nodeBackend/package-lock.json
-GraphQL-API/nodeBackend/package.json
 REST-API/nodeBackend/node_modules/
 REST-API/nodeBackend/package-lock.json
-REST-API/nodeBackend/package.json
 React-Frontend/.eslintrc.cjs
 React-Frontend/.gitignore
 React-Frontend/README.md
 React-Frontend/package-lock.json
-React-Frontend/package.json
 React-Frontend/public/
 React-Frontend/src/assets/
 React-Frontend/vite.config.js       
